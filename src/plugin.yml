@@ -1,0 +1,5 @@
+main: com.solitudecraft.solitudecore.Core
+name: SolitudeCore
+version: 0.1
+author: DragonSlayer1920
+description: Solitude Craft framework.

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="SolitudeCore:jar">
+    <output-path>B:/Users/Nolan/Desktop/Work</output-path>
+    <root id="archive" name="SolitudeCore.jar">
+      <element id="module-output" name="SolitudeCore" />
+    </root>
+  </artifact>
+</component>
