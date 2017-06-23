@@ -8,4 +8,9 @@ import java.util.ArrayList;
 public class HelpMenu {
     public String title;
     public ArrayList<HelpMenuItem> items;
+
+    public HelpMenu(String menuTitle, ArrayList<HelpMenuItem> menuItems) {
+        title = menuTitle;
+        items = menuItems;
+    }
 }
