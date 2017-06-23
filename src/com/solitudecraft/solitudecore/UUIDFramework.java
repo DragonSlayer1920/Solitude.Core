@@ -15,9 +15,7 @@ public class UUIDFramework {
         return Bukkit.getServer().getOfflinePlayer(playerUUID);
     }
 
-    public UUID getUUID(Player player) {
-        return player.getUniqueId();
-    }
+    public UUID getUUID(Player player) { return player.getUniqueId(); }
 
     public String getUsername(String uuid) {
         return getPlayer(uuid).getName();

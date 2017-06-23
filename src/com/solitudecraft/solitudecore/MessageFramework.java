@@ -2,14 +2,13 @@ package com.solitudecraft.solitudecore;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
-import org.bukkit.Server;
 import org.bukkit.entity.Player;
-import java.security.PublicKey;
 import java.util.ArrayList;
 
 /**
  * Created by nolan on 6/17/2017.
  */
+
 public class MessageFramework {
 
     public ArrayList<HelpMenu> menus;
@@ -28,26 +27,16 @@ public class MessageFramework {
         String prefix;
         prefix = (ChatColor.DARK_RED + "" + ChatColor.BOLD + ">>" + ChatColor.RESET + " " + ChatColor.GOLD);
 
-        //CONVERT TO SWITCH
+        switch(type) {
+            case CommandFormat: player.sendMessage(prefix + "Invalid command arguments.");
+                break;
+            case PlayerNotFound: player.sendMessage(prefix + "Target could not be found.");
+                break;
+            case LocationNotFound: player.sendMessage(prefix + "Target location could not be found.");
+                break;
+            case PageNotFound: player.sendMessage(prefix + "Page could not be found.");
+                break;
 
-        if(type == ErrorType.CommandFormat) {
-            player.sendMessage(prefix + "Invalid command arguments.");
-            return;
-        }
-
-        if(type == ErrorType.PlayerNotFound) {
-            player.sendMessage(prefix + "Target could not be found.");
-            return;
-        }
-
-        if(type == ErrorType.LocationNotFound) {
-            player.sendMessage(prefix + "Target location could not be found.");
-            return;
-        }
-
-        if(type == ErrorType.PageNotFound) {
-            player.sendMessage(prefix + "Page could not be found.");
-            return;
         }
     }
 
