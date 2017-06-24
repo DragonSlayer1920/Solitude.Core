@@ -9,4 +9,7 @@ public enum ErrorType {
     PlayerNotFound,
     LocationNotFound,
     PageNotFound,
+    InvalidTarget,
+    InvalidWarp,
+    ButtonWarpExists,
 }

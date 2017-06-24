@@ -36,7 +36,11 @@ public class MessageFramework {
                 break;
             case PageNotFound: player.sendMessage(prefix + "Page could not be found.");
                 break;
-
+            case InvalidTarget: player.sendMessage(prefix + "You cannot target that player.");
+                break;
+            case InvalidWarp: player.sendMessage(prefix + "That warp does not exist.");
+                break;
+            case ButtonWarpExists: player.sendMessage(prefix + "That button is already linked to a warp.");
         }
     }
 
